@@ -1,0 +1,27 @@
+[project]
+name = "news-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.40.20",
+    "fastapi>=0.116.1",
+    "langchain-aws>=0.2.31",
+    "langchain-mcp-adapters>=0.1.9",
+    "langchain-openai>=0.3.32",
+    "langgraph>=0.6.6",
+    "langgraph-cli[inmem]>=0.4.0",
+    "mcp[cli]>=1.13.1",
+    "uvicorn[standard]>=0.32.1",
+    "websockets>=14.1",
+    "httpx>=0.28.1",
+    "agentevals>=0.0.9",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "langsmith>=0.4.20",
+    "pytest>=8.4.2",
+]
